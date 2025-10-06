@@ -13,7 +13,7 @@
   <header class="header">
     <div class="container">
       <div class="header__content">
-        <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+        <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
           <svg class="header__logo-icon" width="110" height="40" aria-hidden="true">
             <use xlink:href="images/sprite.svg#logo-houzzy"></use>
           </svg>
@@ -21,7 +21,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог</a>
+              <a class="main-nav__link" href="catalog.html">Каталог</a>
             </li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Акции</a>
             </li>
@@ -72,475 +72,189 @@
       </div>
     </div>
   </header>
+  
   <main>
-    <div class="breadcrumbs">
+    <!-- Hero Section -->
+    <section class="hero">
       <div class="container">
-        <ol class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#" aria-label="Ссылка на главную">Главная</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#" aria-label="Ссылка на каталог">Каталог</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#" aria-label="Ссылка на мягкая мебель">Мягкая мебель</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#" aria-label="Ссылка на кресла">Кресла</a>
-          </li>
-        </ol>
-      </div>
-    </div>
-    <!-- каталог товаров -->
-    <section class="catalog">
-      <div class="container">
-        <h1 class="catalog__title">Кресла</h1>
-        <div class="catalog__content">
-          <button class="catalog__filter-options" type="button" aria-label="Кнопка открытия фильтра">
-            <svg class="catalog__filter-icon" width="24" height="24" aria-hidden="true"
-              aria-label="Кнопка открытия фильтра">
-              <use xlink:href="images/sprite.svg#icon-options"></use>
-            </svg>
-          </button>
-          <div class="catalog__filter">
-            <ul class="catalog__filter-block">
-              <li class="catalog__filter-item">
-                <button class="catalog__filter-btn" type="button" aria-label="Кнопка фильтра">Кресла в мягкой
-                  обивке</button>
-              </li>
-              <li class="catalog__filter-item">
-                <button class="catalog__filter-btn" type="button" aria-label="Кнопка фильтра">Дизайнерские
-                  кресла</button>
-              </li>
-              <li class="catalog__filter-item">
-                <button class="catalog__filter-btn" type="button" aria-label="Кнопка фильтра">Кресла без спинки</button>
-              </li>
-            </ul>
-            <div class="catalog__filter-block catalog__filter-block--sort">
-              <h2 class="catalog__filter-title">Сортировать:</h2>
-              <ul class="catalog__filter-list">
-                <li class="catalog__filter-item">
-                  <a class="catalog__filter-link" href="#" aria-label="Ссылка">Популярные</a>
-                </li>
-                <li class="catalog__filter-item">
-                  <a class="catalog__filter-link" href="#" aria-label="Ссылка">По возрастанию цены
-                    <svg class="sort-icon" width="16" height="16" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-arrow-top"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="catalog__filter-item">
-                  <a class="catalog__filter-link" href="#" aria-label="Ссылка">По убыванию цены
-                    <svg class="sort-icon" width="16" height="16" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-arrow-bottom"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="hero__content">
+          <h1 class="hero__title">Создайте уют в вашем доме</h1>
+          <p class="hero__subtitle">Мебель премиум-класса для современного интерьера</p>
+          <div class="hero__actions">
+            <a href="catalog.html" class="btn btn--primary">Посмотреть каталог</a>
+            <a href="#" class="btn btn--secondary">Акции и скидки</a>
           </div>
-          <!-- Карточки товаров -->
-          <div class="products">
-            <ul class="products__list">
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <span class="product-card__discount">-20%</span>
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/nort-cozy-mobile.png 1x, images/catalog/nort-cozy-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/nort-cozy-tablet.png 1x, images/catalog/nort-cozy-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/nort-cozy-desktop.png"
-                        srcset="images/catalog/nort-cozy-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--pink" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--woodland" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--submarine" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло nort cozy</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">4 480 руб.</span>
-                      <span class="product-card__price-old">5 600 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <span class="product-card__discount">-20%</span>
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/pikont-mobile.png 1x, images/catalog/pikont-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/pikont-tablet.png 1x, images/catalog/pikont-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/pikont-desktop.png"
-                        srcset="images/catalog/pikont-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--woodland" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло pikont</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">5 360 руб.</span>
-                      <span class="product-card__price-old">7 600 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/heavy-suite-mobile.png 1x, images/catalog/heavy-suite-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/heavy-suite-tablet.png 1x, images/catalog/heavy-suite-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/heavy-suite-desktop.png"
-                        srcset="images/catalog/heavy-suite-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--pink" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло heavy suite</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">9 200 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <span class="product-card__discount">-20%</span>
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/sea-breeze-mobile.png 1x, images/catalog/sea-breeze-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/sea-breeze-tablet.png 1x, images/catalog/sea-breeze-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/sea-breeze-desktop.png"
-                        srcset="images/catalog/sea-breeze-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--pink" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--equator" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло sea breeze</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">3 360 руб.</span>
-                      <span class="product-card__price-old">4 200 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <span class="product-card__discount">-20%</span>
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/mafiafamily-mobile.png 1x, images/catalog/mafiafamily-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/mafiafamily-tablet.png 1x, images/catalog/mafiafamily-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/mafiafamily-desktop.png"
-                        srcset="images/catalog/mafiafamily-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--woodland" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло mafiafamily</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">9 960 руб.</span>
-                      <span class="product-card__price-old">12 450 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/noilfo-mobile.png 1x, images/catalog/noilfo-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/noilfo-tablet.png 1x, images/catalog/noilfo-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/noilfo-desktop.png"
-                        srcset="images/catalog/noilfo-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--submarine" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло noilfo</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">7 860 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/sunbot-mobile.png 1x, images/catalog/sunbot-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/sunbot-tablet.png 1x, images/catalog/sunbot-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/sunbot-desktop.png"
-                        srcset="images/catalog/sunbot-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--equator" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--sambuca" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло sunbot</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">3 880 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="product-card">
-                  <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                    <span class="product-card__discount">-20%</span>
-                    <picture class="product-card__picture">
-                      <source media="(max-width: 768px)"
-                        srcset="images/catalog/dromsa-mobile.png 1x, images/catalog/dromsa-mobile@2x.png 2x">
-                      <source media="(max-width: 1024px)"
-                        srcset="images/catalog/dromsa-tablet.png 1x, images/catalog/dromsa-tablet@2x.png 2x">
-                      <img class="product-card__img" src="images/catalog/dromsa-desktop.png"
-                        srcset="images/catalog/dromsa-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
-                    </picture>
-                    <span class="product-card__details">подробнее</span>
-                  </a>
-                  <div class="product-card__info">
-                    <div class="product-card__brand">
-                      <span class="product-card__brand-name">
-                        <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-brand"></use>
-                        </svg>
-                      </span>
-                      <ul class="product-card__circles-list">
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--submarine" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                        <li class="product-card__circle-item">
-                          <a class="product-card__circle-link product-card__circle-link--equator" href="#"
-                            aria-label="Ссылка"></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="product-card__category">мягкая мебель</p>
-                    <a class="product-card__title" href="#" aria-label="Ссылка">Кресло dromsa</a>
-                    <div class="product-card__price">
-                      <span class="product-card__price-current">7 120 руб.</span>
-                      <span class="product-card__price-old">8 900 руб.</span>
-                    </div>
-                    <div class="product-card__favorite">
-                      <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                      <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                        <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="images/sprite.svg#icon-heart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+        </div>
+        <div class="hero__image">
+          <img src="images/Desktop - 1920 (1).png" alt="Мебель Houzzy" class="hero__img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="features__title">Почему выбирают Houzzy</h2>
+        <div class="features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="48" height="48" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Качество</h3>
+            <p class="feature-card__text">Только проверенные материалы и надежные производители</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="48" height="48" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-bag"></use>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Доставка</h3>
+            <p class="feature-card__text">Быстрая доставка по всей России с бережной упаковкой</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="48" height="48" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Поддержка</h3>
+            <p class="feature-card__text">Консультации дизайнеров и помощь в выборе</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Popular Products Preview -->
+    <section class="popular-products">
+      <div class="container">
+        <h2 class="popular-products__title">Популярные товары</h2>
+        <div class="products__list">
+          <div class="products__item">
+            <div class="product-card">
+              <a class="product-card__link-img" href="catalog.html" aria-label="Ссылка на карточку товара">
+                <span class="product-card__discount">-20%</span>
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/catalog/nort-cozy-mobile.png 1x, images/catalog/nort-cozy-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/catalog/nort-cozy-tablet.png 1x, images/catalog/nort-cozy-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/catalog/nort-cozy-desktop.png"
+                    srcset="images/catalog/nort-cozy-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
+                </picture>
+                <span class="product-card__details">подробнее</span>
+              </a>
+              <div class="product-card__info">
+                <div class="product-card__brand">
+                  <span class="product-card__brand-name">
+                    <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-brand"></use>
+                    </svg>
+                  </span>
+                </div>
+                <p class="product-card__category">мягкая мебель</p>
+                <a class="product-card__title" href="catalog.html" aria-label="Ссылка">Кресло nort cozy</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">4 480 руб.</span>
+                  <span class="product-card__price-old">5 600 руб.</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
+                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="product-card">
+              <a class="product-card__link-img" href="catalog.html" aria-label="Ссылка на карточку товара">
+                <span class="product-card__discount">-20%</span>
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/catalog/sea-breeze-mobile.png 1x, images/catalog/sea-breeze-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/catalog/sea-breeze-tablet.png 1x, images/catalog/sea-breeze-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/catalog/sea-breeze-desktop.png"
+                    srcset="images/catalog/sea-breeze-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
+                </picture>
+                <span class="product-card__details">подробнее</span>
+              </a>
+              <div class="product-card__info">
+                <div class="product-card__brand">
+                  <span class="product-card__brand-name">
+                    <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-brand"></use>
+                    </svg>
+                  </span>
+                </div>
+                <p class="product-card__category">мягкая мебель</p>
+                <a class="product-card__title" href="catalog.html" aria-label="Ссылка">Кресло sea breeze</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">3 360 руб.</span>
+                  <span class="product-card__price-old">4 200 руб.</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
+                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="product-card">
+              <a class="product-card__link-img" href="catalog.html" aria-label="Ссылка на карточку товара">
+                <picture class="product-card__picture">
+                  <source media="(max-width: 768px)"
+                    srcset="images/catalog/heavy-suite-mobile.png 1x, images/catalog/heavy-suite-mobile@2x.png 2x">
+                  <source media="(max-width: 1024px)"
+                    srcset="images/catalog/heavy-suite-tablet.png 1x, images/catalog/heavy-suite-tablet@2x.png 2x">
+                  <img class="product-card__img" src="images/catalog/heavy-suite-desktop.png"
+                    srcset="images/catalog/heavy-suite-desktop@2x.png 2x" width="320" height="400" alt="Кресло">
+                </picture>
+                <span class="product-card__details">подробнее</span>
+              </a>
+              <div class="product-card__info">
+                <div class="product-card__brand">
+                  <span class="product-card__brand-name">
+                    <svg class="product-card__brand-icon" width="56" height="8" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-brand"></use>
+                    </svg>
+                  </span>
+                </div>
+                <p class="product-card__category">мягкая мебель</p>
+                <a class="product-card__title" href="catalog.html" aria-label="Ссылка">Кресло heavy suite</a>
+                <div class="product-card__price">
+                  <span class="product-card__price-current">9 200 руб.</span>
+                </div>
+                <div class="product-card__favorite">
+                  <button class="btn" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
+                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
+                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular-products__actions">
+          <a href="catalog.html" class="btn btn--primary">Посмотреть весь каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
     <section class="subscribe">
       <div class="container">
         <div class="subscribe__wrapper">
@@ -558,192 +272,8 @@
         </div>
       </div>
     </section>
-    <section class="viewed-products">
-      <div class="container">
-        <h2 class="viewed-products__title">Недавно просмотренное</h2>
-        <ul class="viewed-products__list">
-          <li class="viewed-products__item">
-            <div class="product-card product-card--viewed">
-              <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                <span class="product-card__discount">-20%</span>
-                <picture class="product-card__picture">
-                  <source media="(max-width: 768px)"
-                    srcset="images/viewed/mandarin-mobile.png 1x, images/viewed/mandarin-mobile@2x.png 2x">
-                  <source media="(max-width: 1024px)"
-                    srcset="images/viewed/mandarin-tablet.png 1x, images/viewed/mandarin-tablet@2x.png 2x">
-                  <img class="product-card__img" src="images/viewed/mandarin-desktop.png"
-                    srcset="images/viewed/mandarin-desktop@2x.png 2x" width="220" height="280" alt="Кресло">
-                </picture>
-                <span class="product-card__details">подробнее</span>
-              </a>
-              <div class="product-card__info">
-                <a class="product-card__title" href="#" aria-label="Ссылка на карточку товара">Стул Mandarin</a>
-                <div class="product-card__price">
-                  <span class="product-card__price-current">9 960 руб.</span>
-                  <span class="product-card__price-old">12 450 руб.</span>
-                </div>
-                <div class="product-card__favorite">
-                  <button class="btn btn--viewed" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-heart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="viewed-products__item">
-            <div class="product-card product-card--viewed">
-              <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                <picture class="product-card__picture">
-                  <source media="(max-width: 768px)"
-                    srcset="images/viewed/womromo-mobile.png 1x, images/viewed/womromo-mobile@2x.png 2x">
-                  <source media="(max-width: 1024px)"
-                    srcset="images/viewed/womromo-tablet.png 1x, images/viewed/womromo-tablet@2x.png 2x">
-                  <img class="product-card__img" src="images/viewed/womromo-desktop.png"
-                    srcset="images/viewed/womromo-desktop@2x.png 2x" width="220" height="280" alt="Кресло">
-                </picture>
-                <span class="product-card__details">подробнее</span>
-              </a>
-              <div class="product-card__info">
-                <a class="product-card__title" href="#" aria-label="Ссылка на карточку товара">Торшер Womromo</a>
-                <div class="product-card__price">
-                  <span class="product-card__price-current">2 450 руб.</span>
-                </div>
-                <div class="product-card__favorite">
-                  <button class="btn btn--viewed" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-heart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="viewed-products__item">
-            <div class="product-card product-card--viewed">
-              <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                <picture class="product-card__picture">
-                  <source media="(max-width: 768px)"
-                    srcset="images/viewed/olimpia-mobile.png 1x, images/viewed/olimpia-mobile@2x.png 2x">
-                  <source media="(max-width: 1024px)"
-                    srcset="images/viewed/olimpia-tablet.png 1x, images/viewed/olimpia-tablet@2x.png 2x">
-                  <img class="product-card__img" src="images/viewed/olimpia-desktop.png"
-                    srcset="images/viewed/olimpia-desktop@2x.png 2x" width="220" height="280" alt="Кресло">
-                </picture>
-                <span class="product-card__details">подробнее</span>
-              </a>
-              <div class="product-card__info">
-                <a class="product-card__title" href="#" aria-label="Ссылка на карточку товара">Стул Olimpia</a>
-                <div class="product-card__price">
-                  <span class="product-card__price-current">4 890 руб.</span>
-                </div>
-                <div class="product-card__favorite">
-                  <button class="btn btn--viewed" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-heart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="viewed-products__item">
-            <div class="product-card product-card--viewed">
-              <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                <picture class="product-card__picture">
-                  <source media="(max-width: 768px)"
-                    srcset="images/viewed/turefa-mobile.png 1x, images/viewed/turefa-mobile@2x.png 2x">
-                  <source media="(max-width: 1024px)"
-                    srcset="images/viewed/turefa-tablet.png 1x, images/viewed/turefa-tablet@2x.png 2x">
-                  <img class="product-card__img" src="images/viewed/turefa-desktop.png"
-                    srcset="images/viewed/turefa-desktop@2x.png 2x" width="220" height="280" alt="Кресло">
-                </picture>
-                <span class="product-card__details">подробнее</span>
-              </a>
-              <div class="product-card__info">
-                <a class="product-card__title" href="#" aria-label="Ссылка на карточку товара">Стеклянная ваза Turefa</a>
-                <div class="product-card__price">
-                  <span class="product-card__price-current">2 368 руб.</span>
-                </div>
-                <div class="product-card__favorite">
-                  <button class="btn btn--viewed" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-heart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="viewed-products__item">
-            <div class="product-card product-card--viewed">
-              <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                <span class="product-card__discount">-20%</span>
-                <picture class="product-card__picture">
-                  <source media="(max-width: 768px)"
-                    srcset="images/viewed/agnesia-mobile.png 1x, images/viewed/agnesia-mobile@2x.png 2x">
-                  <source media="(max-width: 1024px)"
-                    srcset="images/viewed/agnesia-tablet.png 1x, images/viewed/agnesia-tablet@2x.png 2x">
-                  <img class="product-card__img" src="images/viewed/agnesia-desktop.png"
-                    srcset="images/viewed/agnesia-desktop@2x.png 2x" width="220" height="280" alt="Кресло">
-                </picture>
-                <span class="product-card__details">подробнее</span>
-              </a>
-              <div class="product-card__info">
-                <a class="product-card__title" href="#" aria-label="Ссылка на карточку товара">Стул Mandarin</a>
-                <div class="product-card__price">
-                  <span class="product-card__price-current">7 120 руб.</span>
-                  <span class="product-card__price-old">8 900 руб.</span>
-                </div>
-                <div class="product-card__favorite">
-                  <button class="btn btn--viewed" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-heart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="viewed-products__item">
-            <div class="product-card product-card--viewed">
-              <a class="product-card__link-img" href="#" aria-label="Ссылка на карточку товара">
-                <picture class="product-card__picture">
-                  <source media="(max-width: 768px)"
-                    srcset="images/viewed/agisa-mobile.png 1x, images/viewed/agisa-mobile@2x.png 2x">
-                  <source media="(max-width: 1024px)"
-                    srcset="images/viewed/agisa-tablet.png 1x, images/viewed/agisa-tablet@2x.png 2x">
-                  <img class="product-card__img" src="images/viewed/agisa-desktop.png"
-                    srcset="images/viewed/agisa-desktop@2x.png 2x" width="220" height="280" alt="Кресло">
-                </picture>
-                <span class="product-card__details">подробнее</span>
-              </a>
-              <div class="product-card__info">
-                <a class="product-card__title" href="#" aria-label="Ссылка на карточку товара">Ваза керамика Agisa</a>
-                <div class="product-card__price">
-                  <span class="product-card__price-current">1 800 руб.</span>
-                </div>
-                <div class="product-card__favorite">
-                  <button class="btn btn--viewed" type="button" aria-label="Добавить в корзину">Добавить в корзину</button>
-                  <button class="btn btn--like" type="button" aria-label="Добавить в избранное">
-                    <svg class="product-card__user-icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-heart"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__content-block">
@@ -761,7 +291,7 @@
                 <a class="footer__nav-link" href="#">Оплата</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="#">Каталог</a>
+                <a class="footer__nav-link" href="catalog.html">Каталог</a>
               </li>
               <li class="footer__nav-item">
                 <a class="footer__nav-link" href="#">Коллекции</a>
