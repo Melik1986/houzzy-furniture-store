@@ -53,6 +53,10 @@ Houzzy is a comprehensive furniture e-commerce platform featuring a complete sho
   <em>Tablet layout (768px)</em>
 </p>
 
+## Live Preview
+
+- Preview: https://houzzy-furniture-store.vercel.app/index.html
+
 ## Project Structure
 ```
 Houzzy/
