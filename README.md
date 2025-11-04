@@ -15,6 +15,10 @@
   <p align="center">Complete furniture e-commerce platform with shopping cart, advanced filters, product search, and recently viewed items.</p>
 </div>
 
+## Live Preview
+
+- Preview: https://houzzy-furniture-store.vercel.app/index.html
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -52,10 +56,6 @@ Houzzy is a comprehensive furniture e-commerce platform featuring a complete sho
   <br />
   <em>Tablet layout (768px)</em>
 </p>
-
-## Live Preview
-
-- Preview: https://houzzy-furniture-store.vercel.app/index.html
 
 ## Project Structure
 ```
